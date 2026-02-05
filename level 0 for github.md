@@ -84,7 +84,7 @@ command 2: cat ./-
 
 \*\*Explanation:\*\*
 
-
+The Command ls -a lists all the files and directories stored within the current directory. Then once I've seen the - file then i read the file useing the cat ./- command to get the password stored inside.  
 
 
 
@@ -93,8 +93,7 @@ command 2: cat ./-
 
 
 \*\*What I Learned:\*\*
-
-
+Use this Cat ./-  command like this to read files that have names with dashes similar to - this which will not allow you to execute the read command the regular way.
 
 
 
@@ -114,29 +113,21 @@ The password for the next level is stored in a file called
 
 \*\*Solution:\*\*
 
-Command 1: la -a
+Command 1: ls -a
 
 Command 2: cat ./"--spaces in this filename--"
 
 
 
 
-
 \*\*Explanation:\*\*
+The Command ls -a lists all the files and directories stored within the current directory. Then once I've seen the --spaces in this filename--  file then i read the file useing the cat ./"--spaces in this filename--" command to get the password stored inside.  
 
 
 
 
 
 \*\*Password:\*\* MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
-
-
-
-
-
-\*\*What I Learned:\*\*
-
-
 
 
 
@@ -154,19 +145,18 @@ The password for the next level is stored in a hidden file in the inhere directo
 
 \*\*Solution:\*\*
 
-**Command 1: ls -la**
+Command 1: ls -la
 
-**Command 2: cd inhere**
+Command 2: cd inhere
 
-**Command 3: ls -la**
+Command 3: ls -la
 
-**Command 4: cat ./'...Hiding-From-You'**
+Command 4: cat ./'...Hiding-From-You'
 
 
 
 \*\*Explanation:\*\*
-
-
+The Command ls -la lists all the files and directories stored within the current directory. Then once I've seen the inhere directory i use the cd inhere to change into this directory. Then i use the ls -la Command that lists all the files and directories stored within the current directory again. Then I've found the suspected file that may contain the password. I then read the file useing the cat ./'...Hiding-From-You'  command to get the password stored inside.  
 
 
 
@@ -175,7 +165,7 @@ The password for the next level is stored in a hidden file in the inhere directo
 
 
 \*\*What I Learned:\*\*
-
+I learnt that you have to be careful of not missing spaces or quotation marks as the command may not work without them. Also the ls -la command not only shows files and directories but the level of permission and user etc.
 
 
 
@@ -202,24 +192,13 @@ Command 4: cat ./'-file07'
 
 
 
-
-
 \*\*Explanation:\*\*
-
-
-
+The Command ls -la lists all the files and directories stored within the current directory. Then once I've seen the inhere directory i use the cd inhere to change into this directory. Then i use the command ls -la to list all the files and directories stored within the current directory again. Once i did this a lot of files popped up and i had to read each one untill I came across the file with the password. This is the command and the file cat ./'-file07'.  
 
 
 
 
 \*\*Password:\*\* 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
-
-
-
-
-
-\*\*What I Learned:\*\*
-
 
 
 
@@ -241,28 +220,21 @@ The password for the next level is stored in a file somewhere under the inhere d
 
 
 
-
 \*\*Solution:\*\*
 
 Command 1: ls -la
 
 Command 2: cd inhere
 
-Command 3: ls -la
+Command 3: find . -type f -size 1033c
 
-Command 4: cd maybehere07
-
-Command 5: ls -la
-
-Command 6: cat ./'.file2'
-
+Command 4: cat ./maybehere07/.file2
 
 
 
 
 \*\*Explanation:\*\*
-
-
+The Command ls -la lists all the files and directories stored within the current directory. Then change into the inhere directory using the cd inhere command. Then use the ls -la command to list all the files and directories stored within the inhere directory. I then use the find command with the values in the challenge to find the path of the wanted file. I then got the path and i used that cat command to read the file for the password. The command i used was cat ./maybehere07/.file2
 
 
 
@@ -273,8 +245,7 @@ Command 6: cat ./'.file2'
 
 
 \*\*What I Learned:\*\*
-
-
+I found out that the find command is a simple and effective way to find the file path if you have the correct values as it takes you straight to the file your looking for as well as the file path.
 
 
 
@@ -306,24 +277,14 @@ Command 3: cat /var/lib/dpkg/info/bandit7.password
 
 
 
-
-
-
-
 \*\*Explanation:\*\*
 
+I used the command ls -la to list all the files and directories stored within the current directory. I then used the find command to locate the file path using the given properties given in the challenge. The command i used find / -user bandit7 -group bandit6 -size 33c . I then used the cat command to read the file that contains the password. This is the command i used cat /var/lib/dpkg/info/bandit7.password
 
 
 
 
 \*\*Password:\*\* morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
-
-
-
-
-
-\*\*What I Learned:\*\*
-
 
 
 
@@ -352,10 +313,8 @@ Command 3: grep millionth data.txt
 
 
 
-
-
 \*\*Explanation:\*\*
-
+I used the command ls -la to list all the files and directories stored within the current directory. Once i saw the data.txt i read it using the cat command cat data.txt. I then used the grep command grep millionth data.txt to get the password from the data.txt file which is next to the word millionth.
 
 
 
@@ -367,8 +326,7 @@ Command 3: grep millionth data.txt
 
 
 \*\*What I Learned:\*\*
-
-
+grep is the tool useed to search for certain word within a file full of words.
 
 
 
@@ -393,9 +351,8 @@ Command 3: sort data.txt | uniq -c | head
 
 
 
-
 \*\*Explanation:\*\*
-
+I used the command ls -la to list all the files and directories stored within the current directory. Then when i found the data.txt file i used the cat command to read the file cat data.txt. Then i used the following Sort command sort data.txt | uniq -c | head to sort the files contents by grouping together identical lines, to give a number for occuraces of each line and to give me the top ten lines as that is were the passwrod is within the file. I used pipe inbetween the commands so takes the sorted output and sends it directly to the next command.
 
 
 
@@ -407,7 +364,7 @@ Command 3: sort data.txt | uniq -c | head
 
 
 \*\*What I Learned:\*\*
-
+Pipe is the | inbetween the commands which takes the sorted output and sends it directly to the next command.
 
 
 
@@ -433,18 +390,12 @@ Command 2: cat data.txt
 
 
 \*\*Explanation:\*\*
-
+I used the command ls -la to list all the files and directories stored within the current directory. I then read the data.txt file with the cat data.txt command. I then scrooled down till i saw several = charaters which had the password right beside it.
 
 
 
 
 \*\*Password:\*\* FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
-
-
-
-
-
-\*\*What I Learned:\*\*
 
 
 
@@ -715,6 +666,7 @@ The password for the next level is stored in /etc/bandit\_pass/bandit14 and can 
 
 
 \*\*What I Learned:\*\*
+
 
 
 
