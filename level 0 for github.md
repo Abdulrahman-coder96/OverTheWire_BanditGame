@@ -407,7 +407,7 @@ I used the command ls -la to list all the files and directories stored within th
 
 \*\*Challenge:\*\*
 
-**The password for the next level is stored in the file data.txt, which contains base64 encoded data**
+The password for the next level is stored in the file data.txt, which contains base64 encoded data
 
 
 
@@ -426,7 +426,7 @@ Command 3: base64 -d data.txt
 
 
 \*\*Explanation:\*\*
-
+I used the command ls -la to list all the files and directories stored within the current directory. I then read the data.txt file with the cat data.txt command. Then i used the base64 command with the -d flag to decode. 
 
 
 
@@ -438,8 +438,7 @@ Command 3: base64 -d data.txt
 
 
 \*\*What I Learned:\*\*
-
-
+The - d flag used when using the base64 command decodes the data instead on encode it.
 
 
 
@@ -466,7 +465,7 @@ Command 3: cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 
 \*\*Explanation:\*\*
-
+I used the command ls -la to list all the files and directories stored within the current directory. I then read the data.txt file with the cat data.txt command. Then i read the file with the cat command and then pipe in the second command to execute right after. This is includes tr which to delete and translate characters. This 'A-Za-z' 'N-ZA-Mn-za-m' defines the targeted set. The full command cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' i put together to execute both commmands one after the other got me the password.
 
 
 
@@ -474,12 +473,6 @@ Command 3: cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 
 \*\*Password:\* 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
-
-
-
-
-
-\*\*What I Learned:\*\*
 
 
 
@@ -612,7 +605,7 @@ Command 54: cat data
 
 
 \*\*Explanation:\*\*
-
+I used the command ls -la to list all the files and directories stored within the current directory.
 
 
 
@@ -666,6 +659,7 @@ The password for the next level is stored in /etc/bandit\_pass/bandit14 and can 
 
 
 \*\*What I Learned:\*\*
+
 
 
 
