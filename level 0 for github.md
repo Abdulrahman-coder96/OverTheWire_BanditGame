@@ -614,6 +614,7 @@ I used the command ls -la to list all the files and directories stored within th
 
 
 \*\*What I Learned:\*\*
+Using the xxd turns the text hex dump back into a binary file as it reverse the hex dump.
 
 
 
@@ -656,6 +657,7 @@ The password for the next level is stored in /etc/bandit\_pass/bandit14 and can 
 
 
 \*\*What I Learned:\*\*
+
 
 
 
