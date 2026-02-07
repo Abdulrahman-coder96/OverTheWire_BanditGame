@@ -605,13 +605,10 @@ Command 54: cat data
 
 
 \*\*Explanation:\*\*
-I used the command ls -la to list all the files and directories stored within the current directory.
-
-
+I used the command ls -la to list all the files and directories stored within the current directory. I then used the cat command to read the data.txt file. Then i make a temporary to work in mkdir /tmp/lvl12. I then copy and paste the data.txt into the the new temporary directory and the cd into that directory. I then used the xxd to turn the text hex dump back into a binary file and reverse the hex dump. Then i repeatedly check the file type and decompress appropriately and keep running file on the resulting output until it finally says "ASCII text", after that i found the password using the cat command.
 
 
 \*\*Password:\* FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
-
 
 
 
@@ -659,6 +656,7 @@ The password for the next level is stored in /etc/bandit\_pass/bandit14 and can 
 
 
 \*\*What I Learned:\*\*
+
 
 
 
